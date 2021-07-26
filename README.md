@@ -2,7 +2,7 @@
 
 For this challenge there will be three models: `Service`, `User`, and `Subscription`.
 
-The relationships are a `Service` has many `Subscriptions`, a `User` has many `Subscriptions`, and a `Subscription` belongs to a `Shop` and to a `User`. `Services` and `Users` have a many to many relationship.
+The relationships are a `Service` has many `Subscriptions`, a `User` has many `Subscriptions`, and a `Subscription` belongs to a `Service` and to a `User`. `Services` and `Users` have a many to many relationship.
 
 **Note**: You should draw your domain on paper or on a whiteboard _before you start coding_. Remember to identify a single source of truth for your data.
 
