@@ -10,6 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_07_26_133418) do
+
+  create_table "services", force: :cascade do |t|
+    t.string "name"
+    t.float "price"
+  end
+
+  create_table "subscriptions", force: :cascade do |t|
+    t.integer "billing_date"
+    t.integer "user_id"
+    t.integer "service_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "email"
+    t.integer "age"
+  end
 
 end

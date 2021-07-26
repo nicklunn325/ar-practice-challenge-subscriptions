@@ -10,5 +10,9 @@ Subscription.destroy_all
 end
 
 10.times do
-    User.create(username: Faker::Name.name, email: Faker::Name.last_name, age: rand(18..99)))
+    User.create(username: Faker::Name.name, email: Faker::Name.last_name, age: rand(18..99))
+end
+
+50.times do
+    Subscription.create(billing_date: rand(1..28), user_id: rand(1..10), service_id: rand(1..10))
 end

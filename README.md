@@ -51,7 +51,7 @@ The first thing you will need to do is to create the migration for the `subscrip
 
 **Once you have finished your migrations** run your migrations with `rake db:migrate`
 
-**YOU HAVE ALSO BEEN GIVEN A SEEDS FILE** after running your migrations take a look at your seeds file, it creates authors, genres, and books. **_It is not complete_** so be sure to look at it carefully and figure out what is missing.
+**YOU HAVE ALSO BEEN GIVEN A SEEDS FILE** after running your migrations take a look at your seeds file, it creates users and services only.
 
 ### Object Relationships
 
